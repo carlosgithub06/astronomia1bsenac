@@ -1,0 +1,286 @@
+            %h1.logo
+  Explorando o Sistema Solar
+  %span somente com CSS
+
+%input.planet9{:type => 'radio', :id => 'pluto', :name => 'planet'}
+%label.pluto.menu{:for => 'pluto'}
+  .preview
+  .info
+    %h2
+      .pip
+      Plutão
+    %h3 39,5 UA
+
+%input.planet8{:type => 'radio', :id => 'neptune', :name => 'planet'}
+%label.neptune.menu{:for => 'neptune'}
+  .preview
+  .info
+    %h2
+      .pip
+      Netuno
+    %h3 30,06 UA
+
+%input.planet7{:type => 'radio', :id => 'uranus', :name => 'planet'}
+%label.uranus.menu{:for => 'uranus'}
+  .preview
+  .info
+    %h2
+      .pip
+      Urano
+    %h3 19,18 UA
+
+%input.planet6{:type => 'radio', :id => 'saturn', :name => 'planet'}
+%label.saturn.menu{:for => 'saturn'}
+  .preview
+  .info
+    %h2
+      .pip
+      Saturno
+    %h3 9,539 UA
+
+%input.planet5{:type => 'radio', :id => 'jupiter', :name => 'planet'}
+%label.jupiter.menu{:for => 'jupiter'}
+  .preview
+  .info
+    %h2
+      .pip
+      Júpiter
+    %h3 5,203 UA
+
+%input.planet4{:type => 'radio', :id => 'mars', :name => 'planet', :checked => true}
+%label.menu.mars{:for => 'mars'}
+  .preview
+  .info
+    %h2
+      .pip
+      Marte
+    %h3 1,524 UA
+
+%input.planet3{:type => 'radio', :id => 'earth', :name => 'planet', :checked => true}
+%label.menu.earth{:for => 'earth'}
+  .preview
+  .info
+    %h2
+      .pip
+      Terra
+    %h3 1 UA
+
+%input.planet2{:type => 'radio', :id => 'venus', :name => 'planet', :checked => true}
+%label.menu.venus{:for => 'venus'}
+  .preview
+  .info
+    %h2
+      .pip
+      Vênus
+    %h3 0,723 UA
+
+%input.planet1{:type => 'radio', :id => 'mercury', :name => 'planet', :checked => true}
+%label.menu.mercury{:for => 'mercury'}
+  .preview
+  .info
+    %h2
+      .pip
+      Mercúrio
+    %h3 0,39 UA
+
+.solar
+  .solar_systm
+    .planet.mercury
+      .planet_description.mercury
+        %h2 Planeta
+        %h1 Mercúrio
+        %p Mercúrio é o planeta mais próximo do Sol. Ele completa sua órbita mais rapidamente do que qualquer outro planeta no Sistema Solar. Isso se deve ao fato de que ele está muito mais perto do Sol, o que faz com que sua velocidade orbital seja maior. Foi nomeado pelos romanos em homenagem ao deus mensageiro Mercúrio, devido à sua rapidez.
+        %label{:for => 'readMercury'}
+          %a{:href => '#mercury'} 
+            Leia mais
+            %span e
+      .overlay
+  .solar_systm
+    .planet.venus
+      .planet_description.venus
+        %h2 Planeta
+        %h1 Vênus
+        %p Vênus, o segundo planeta a partir do Sol, é muitas vezes chamado de "irmão gêmeo da Terra" devido ao seu tamanho e composição semelhantes. No entanto, suas condições de superfície são extremas, com temperaturas extremamente altas e uma atmosfera densa composta principalmente de dióxido de carbono. Foi nomeado em homenagem à deusa romana do amor e da beleza.
+        %label{:for => 'readVenus'}
+          %a{:href => '#venus'} 
+            Leia mais
+            %span e
+      .overlay
+  .solar_systm
+    .planet.earth
+      .moon.moon
+        %h3 Lua
+        %h2 Lua
+      .trajectory.m
+      .planet_description.earth
+        %h2 Planeta
+        %h1 Terra
+        %p A Terra é o nosso lar e o único planeta conhecido a ter uma atmosfera com oxigênio livre, oceanos de água líquida e vida. A vida na Terra é única e diversa, sendo o único planeta até agora onde encontramos vida.
+        %label{:for => 'readEarth'}
+          %a{:href => '#earth'} 
+            Leia mais
+            %span e
+      .overlay
+  .solar_systm
+    .planet.mars
+      .moon.deimos
+        %h3 Lua
+        %h2 Deimos
+      .trajectory.d
+      .moon.phobos
+        %h3 Lua
+        %h2 Fobos
+      .trajectory.p
+      .planet_description.mars
+        %h2 Planeta
+        %h1 Marte
+        %p Marte é o quarto planeta a partir do Sol e o segundo menor do Sistema Solar. Seu nome vem do deus romano da guerra, e é conhecido como o "Planeta Vermelho" devido à sua aparência avermelhada causada pela ferrugem de seu solo.
+        %label{:for => 'readMars'}
+          %a{:href => '#mars'} 
+            Leia mais
+            %span e
+      .overlay
+  .solar_systm
+    .planet.jupiter
+      .moon.lo
+        %h3 Lua
+        %h2 Io
+      .moon.europa
+        %h3 Lua
+        %h2 Europa
+      .moon.ganymede
+        %h3 Lua
+        %h2 Ganimedes
+      .trajectory.lop
+      .trajectory.eu
+      .trajectory.ga
+      .planet_description.jupiter
+        %h2 Planeta
+        %h1 Júpiter
+        %p Júpiter é o maior planeta do Sistema Solar e foi nomeado em homenagem ao rei dos deuses da mitologia romana. Júpiter tem uma enorme quantidade de luas, sendo algumas delas maiores que planetas inteiros.
+        %label{:for => 'readJupiter'}
+          %a{:href => '#jupiter'} 
+            Leia mais
+            %span e
+      .overlay
+  .solar_systm
+    .planet.saturn
+      .moon.titan
+        %h3 Lua
+        %h2 Titã
+      .moon.dione
+        %h3 Lua
+        %h2 Dione
+      .moon.enceladus
+        %h3 Lua
+        %h2 Encelado
+      .trajectory.ti
+      .trajectory.di
+      .trajectory.enc
+      .planet_description.saturn
+        %h2 Planeta
+        %h1 Saturno
+        %p Saturno é o sexto planeta a partir do Sol e o segundo maior planeta do Sistema Solar. Saturno recebe seu nome do deus romano Cronos, o senhor dos Titãs.
+        %label{:for => 'readSaturn'}
+          %a{:href => '#saturn'} 
+            Leia mais
+            %span e
+      .overlay
+  .solar_systm
+    .planet.uranus
+      .moon.miranda
+        %h3 Lua
+        %h2 Miranda
+      .moon.ariel
+        %h3 Lua
+        %h2 Ariel
+      .moon.umbriel
+        %h3 Lua
+        %h2 Umbriel
+      .trajectory.mir
+      .trajectory.ari
+      .trajectory.umb
+      .planet_description.uranus
+        %h2 Planeta
+        %h1 Urano
+        %p Urano foi o primeiro planeta a ser descoberto cientificamente. O planeta é notável por sua inclinação dramática, que faz com que seu eixo aponte quase diretamente para o Sol.
+        %label{:for => 'readUranus'}
+          %a{:href => '#uranus'} 
+            Leia mais
+            %span e
+      .overlay
+
+  %input.read{:type => 'radio', :id => 'readMercury', :name => 'mercuryRead'}
+%label.closeBig{:for => 'closeMercury'}
+%input.read{:type => 'radio', :id => 'closeMercury', :name => 'mercuryRead'}
+.panel
+    %h1 Mercúrio
+    
+    %p Mercúrio é o planeta mais próximo do sol. Por isso, ele orbita o sol mais rápido que todos os outros planetas, o que levou os romanos a nomeá-lo após o deus mensageiro, de pés rápidos.
+
+    %p Os sumérios já conheciam Mercúrio há pelo menos 5.000 anos. Frequentemente era associado a Nabu, o deus da escrita. Mercúrio também recebeu nomes diferentes para sua aparência tanto como estrela da manhã quanto como estrela da noite. Os astrônomos gregos sabiam, no entanto, que os dois nomes se referiam ao mesmo corpo, e Heráclito, por volta de 500 a.C., pensou corretamente que tanto Mercúrio quanto Vênus orbitavam o sol, e não a Terra.
+    
+    %img{:src => 'https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2012/11/mercury-1.jpg?fit=678%2C381&ssl=1'}
+    
+    %h2 Um ano em Mercúrio dura apenas 88 dias.
+    %p Um dia solar (o tempo do meio-dia ao meio-dia na superfície do planeta) em Mercúrio dura o equivalente a 176 dias terrestres, enquanto o dia sideral (tempo para 1 rotação em relação a um ponto fixo) dura 59 dias terrestres. Mercúrio está quase totalmente preso pelas marés ao Sol e, com o tempo, isso desacelerou a rotação do planeta para coincidir quase perfeitamente com sua órbita ao redor do Sol. Mercúrio também possui a maior excentricidade orbital entre todos os planetas, com sua distância do Sol variando de 46 a 70 milhões de km.
+
+    %h2 Mercúrio é o menor planeta do Sistema Solar.
+    %p Um dos cinco planetas visíveis a olho nu, Mercúrio tem apenas 4.879 quilômetros de diâmetro no equador, enquanto a Terra tem 12.742 quilômetros.
+
+    %h2 Mercúrio é o segundo planeta mais denso.
+    %p Apesar de pequeno, Mercúrio é muito denso. Cada centímetro cúbico tem uma densidade de 5,4 gramas, com apenas a Terra possuindo maior densidade. Isso se deve principalmente ao fato de Mercúrio ser composto principalmente de metais pesados e rochas.
+
+    %h2 Mercúrio tem rugas.
+    %p À medida que o núcleo de ferro do planeta esfriou e se contraiu, a superfície de Mercúrio se tornou enrugada. Os cientistas nomearam essas rugas de Lobate Scarps. Elas podem ter até uma milha de altura e centenas de milhas de comprimento.
+    %br
+    
+%input.read{:type => 'radio', :id => 'readVenus', :name => 'venusRead'}
+%label.closeBig{:for => 'closeVenus'}
+%input.read{:type => 'radio', :id => 'closeVenus', :name => 'venusRead'}
+.panel
+    %h1 Vênus
+    %p Vênus, o segundo planeta a partir do sol, é nomeado após a deusa romana do amor e da beleza. O planeta — o único planeta nomeado após uma figura feminina — pode ter sido nomeado após a deusa mais bonita do seu panteão porque era o que brilhava mais intensamente entre os cinco planetas conhecidos pelos astrônomos antigos.
+
+    %p Antigamente, Vênus era muitas vezes considerada como duas estrelas diferentes, a estrela da noite e a estrela da manhã — isto é, as que apareciam primeiro ao pôr do sol e ao nascer do sol. Em latim, eram conhecidas respectivamente como Vesper e Lucifer. Nos tempos cristãos, Lucifer, ou "portador da luz", passou a ser conhecido como o nome de Satanás antes de sua queda. No entanto, observações mais detalhadas de Vênus na era espacial revelaram um ambiente infernal. Isso torna Vênus um planeta muito difícil de observar de perto, pois as naves espaciais não sobrevivem muito tempo em sua superfície.
+    
+    %img{:src => 'https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2014/2-whatistheave.jpg'}
+    
+    %h2 Um dia em Vênus dura mais que um ano.
+    %p Vênus leva 243 dias terrestres para completar uma rotação em seu eixo (dia sideral). Sua órbita ao redor do Sol leva 225 dias terrestres, em comparação com os 365 dias da Terra. Um dia na superfície de Vênus (dia solar) dura 117 dias terrestres.
+    
+    %h2 Vênus gira na direção oposta à maioria dos outros planetas.
+    %p Isso significa que Vênus está girando na direção oposta ao movimento do Sol, esse fenômeno é conhecido como rotação retrógrada. Uma possível razão para isso pode ser uma colisão no passado com um asteroide ou outro objeto que alterou o caminho de rotação do planeta. Além disso, Vênus se diferencia da maioria dos outros planetas do Sistema Solar por não ter satélites naturais.
+    
+    %h2 Vênus é o segundo objeto mais brilhante no céu noturno.
+    %p Apenas a Lua é mais brilhante. Com uma magnitude entre -3.8 e -4.6, Vênus é tão brilhante que pode ser visto até durante o dia em um dia claro.
+
+    %h2 A pressão atmosférica em Vênus é 92 vezes maior que a da Terra.
+    %p Embora seu tamanho e massa sejam semelhantes aos da Terra, pequenos asteroides são esmagados ao entrar na sua atmosfera, o que significa que não há crateras pequenas na superfície do planeta. A pressão sentida por um ser humano na superfície seria equivalente à pressão experimentada nas profundezas do mar na Terra.
+    %br
+    
+%input.read{:type => 'radio', :id => 'readEarth', :name => 'earthRead'}
+%label.closeBig{:for => 'closeEarth'}
+%input.read{:type => 'radio', :id => 'closeEarth', :name => 'earthRead'}
+.panel
+    %h1 Terra
+    %p A Terra, nossa casa, é o terceiro planeta a partir do sol. É o único planeta conhecido que possui uma atmosfera com oxigênio livre, oceanos de água líquida em sua superfície e, claro, vida.
+
+    %p A Terra é o quinto maior dos planetas do Sistema Solar — menor que os quatro gigantes gasosos, Júpiter, Saturno, Urano e Netuno, mas maior que os três outros planetas rochosos.
+    
+    %img{:src => 'https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&h=350'}
+    
+    %h2 A rotação da Terra está gradualmente desacelerando.
+    %p Essa desaceleração ocorre de forma quase imperceptível, aproximadamente 17 milissegundos por século, embora a taxa com que isso acontece não seja perfeitamente uniforme. Isso tem o efeito de alongar os nossos dias, mas de forma tão lenta que pode demorar até 140 milhões de anos até que o comprimento de um dia aumente para 25 horas.
+ 
+    %h2 Antigamente, acreditava-se que a Terra era o centro do universo.
+    %p Devido aos movimentos aparentes do Sol e dos planetas em relação ao seu ponto de vista, os cientistas antigos insistiam que a Terra permanecia estática, enquanto outros corpos celestes viajavam em órbitas circulares ao seu redor. Eventualmente, a ideia de que o Sol era o centro do universo foi proposta por Copérnico, embora isso também não seja o caso.
+    
+    %h2 A Terra tem um campo magnético poderoso.
+    %p Esse fenômeno é causado pelo núcleo de níquel e ferro do planeta, combinado com sua rotação rápida. Esse campo protege a Terra dos efeitos do vento solar.
+
+    %h2 A Terra tem apenas um satélite natural.
+    %p Como uma porcentagem do tamanho do corpo que orbita, a Lua é o maior satélite de qualquer planeta no nosso Sistema Solar. No entanto, em termos absolutos, é apenas o quinto maior satélite natural.
+    %br
+
+ 
